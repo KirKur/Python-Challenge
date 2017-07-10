@@ -36,4 +36,4 @@ def parse_verilog(filename):
 parse_verilog(init_filename)
 
 result.close()
-print ("Verilog parse done!")
+print("Verilog parse done!")
