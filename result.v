@@ -1,0 +1,12 @@
+one
+two
+three
+yellow
+blue
+fire
+earth
+water
+air
+green
+four
+five
