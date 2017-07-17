@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
 import re
 
-
-def remove_sp(my_str):
-    result = re.split(r'\s+$', my_str)
-    return result[0]
-
 array1 = []
 array2 = []
 # parse text file and divide it into two separate columns:
 with open('deltas\delta.txt') as img_text:
     for string in img_text:
         col1, col2 = re.split(r'\s{3}\b', string, 1)
-        array1.append(remove_sp(col1))
-        array2.append(remove_sp(col2))
+        array1.append(col1.strip())
+        array2.append(col2.strip())
 
 delta1 = open('deltas\delta1.png', 'wb')
 delta2 = open('deltas\delta2.png', 'wb')
